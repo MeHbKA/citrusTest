@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/media.css">
+  <title>Citrus Test</title>
+</head>
+<body>
+  <div class="blockWrap">
+    <div class="top">
+      <span class="play"><img src="images/play.png" alt="play"></span>
+      <span class="rotate"><img src="images/360-degree-icon-14.jpg" alt="rotate"></span>
+    </div>
+    <div class="phone"></div>
+    <div class="colorWrap">
+      <input name="color" type="radio" id="black" value = "images/phoneBlack.jpg" checked><label for="black"><div class="color black"></div></label>
+      <input name = "color" type="radio" id="pink" value="images/phonePink.jpg"><label for="pink"><div class="color pink"></div></label>
+    </div>
+    <div class= "rate">
+      <input id="star-4" type="radio" name="reviewStars" checked/>
+      <label title="gorgeous" for="star-4"></label>
+
+      <input id="star-3" type="radio" name="reviewStars"/>
+      <label title="good" for="star-3"></label>
+
+      <input id="star-2" type="radio" name="reviewStars"/>
+      <label title="regular" for="star-2"></label>
+
+      <input id="star-1" type="radio" name="reviewStars"/>
+      <label title="poor" for="star-1"></label>
+
+      <input id="star-0" type="radio" name="reviewStars"/>
+      <label title="bad" for="star-0"></label>
+    </div>
+    <div class = "rating">5.0</div>
+    <div class = "message"><img src="images/message.png" alt="message">136 отзывов</div>
+    <div class="code">
+      <div class = "codeText">Код:</div>
+      <div class = "codeNum">5G2MY-526123</div>
+    </div>
+    <div class="avability">
+      <div class="avaible">
+        <div class="greenRound"></div>
+        <div class="avaibleText">В наличии</div>
+      </div>
+      <div class="notAvaible">
+        <div class="redRound"></div>
+        <div class="notAvaibleText">Нет в наличии</div>
+      </div>
+    </div>
+    <div class="info">Samsung Galaxy Tab E 9.6" 3G 8GB (SM-T561NZKA) Black</div>
+    <div class="memory">
+      <input name = "memory" type="radio" id="16" checked><label for="16" class = "16">16 GB</label>
+      <input name = "memory" type="radio" id="32" ><label for="32" class = "32">32 GB</label>
+    </div>
+    <div class="price">
+      <div class="programmCitrus">По программе «Цитрус Обмен»:</div>
+      <div class="oldPrice">30 580</div>
+      <div class="newPrice">22 599 <p>грн</p></div>
+      <div class="save">Экономия: <p>7 981 грн</p></div>
+    </div>
+    <div class="icons">
+      <div class="compare"><img src="images/compare.png" alt="compare"></div>
+      <div class="like"><img src="images/heart.png" alt="like"></div>
+      <div class="cart"><img src="images/cart.png" alt="cart"></div>
+    </div>
+    <div class="stock">
+      <img src="images/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%82%D0%BE%D1%87%D0%B5%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA.bmp" alt="">
+      <div class="stockRight">
+        <div class="stockRightTop">Акция</div>
+        <div class="stockRightBot">100 грн на первую покупку!</div>
+      </div>
+    </div>
+    <div class="spec">
+      <ul>Быстрые Характеристики
+        <li>Li-polimer</li>
+        <li>7500 mAh</li>
+        <li>5 V</li>
+        <li>Время автономной работы в режиме ожидания 12 ч</li>
+      </ul>
+    </div>
+    
+  </div>
+  
+  
+  
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

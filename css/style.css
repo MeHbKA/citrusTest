@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.blockWrap {
+  margin-top: 30px;
+  margin-left: 50px;
+  position: relative;
+  width: 450px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.blockWrap:hover {
+  position: absolute;
+  height: auto;
+  overflow: visible;
+  border: 1px solid green;
+}
+
+.blockWrap:hover .avaible,.blockWrap:hover .memory {
+  display: block;
+}
+
+.blockWrap:hover .notAvaible{
+  display: none;
+}
+
+.top {
+  margin-left: 60px;
+}
+
+.play > img {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  opacity: 0.3;
+}
+
+.rotate > img{
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  opacity: 0.5;
+}
+
+.phone > img {
+  margin-left: 50px;
+  height: 300px;
+  width: 300px;
+}
+
+.colorWrap {
+  display: inline-block;
+  top: -25px;
+  left: 60px;
+  position: relative;
+}
+
+
+.colorWrap > input[type=radio], .memory > input[type=radio] {
+/*   Hide original inputs */
+  display: none;
+}
+
+.color {
+  border-radius: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.colorWrap > label {
+  margin: 0 auto;
+  padding: 2px;
+  height: 28px;
+  width: 28px;
+  border-radius: 5px;
+}
+
+.colorWrap > input[type=radio]:checked + label {
+  border: 2px solid green;
+}
+
+.black {
+  background-color: black;
+}
+
+.pink {
+  background-color: pink;
+}
+
+
+
+
+
+
+/* rate*/
+
+
+.rate > input:checked ~ label, .rate > label, .rate > label:hover, .rate > label:hover ~ label {
+  background: url('../images/starSprite.png') no-repeat;
+  background-size: 16px;
+}
+
+.rate {
+  overflow: hidden;  
+  position: absolute;
+  left: 60px;
+  top: 350px;
+}
+
+.rate > input {
+  float: left;
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 0;
+}
+
+.rate > input:checked ~ label {
+  background-position: 0 -15px;
+  height: 16px;
+  width: 16px;
+}
+
+.rate > label {
+  float: right;
+  background-position: 0 1px;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.rate > label:hover, .rate > label:hover ~ label {
+  background-position: 0 -15px;
+  height: 16px;
+  width: 16px;
+}
+
+
+#star-0 {
+  position: absolute;
+  left: 0;
+}
+
+#star-1 {
+  position: absolute;
+  left: 16px;
+}
+
+#star-2 {
+  position: absolute;
+  left: 32px;
+}
+
+#star-3 {
+  position: absolute;
+  left: 48px;
+}
+
+#star-4 {
+  position: absolute;
+  left: 64px;
+}
+
+.rating {
+  opacity: 0.5;
+  font-weight: 600;
+  display: inline-block;
+  width: 25px;
+  margin-left: 85px;
+  margin-top: 17px;
+}
+
+.message {
+  display: inline-block;
+  margin-left: 40px;
+  color: limegreen;
+  text-decoration: underline;
+  font-size: 10px;
+}
+.message img {
+  opacity: 0.5;
+  height: 20px;
+  width: 20px;
+}
+
+
+
+.code {
+  margin-left: 60px;
+}
+
+.code > div {
+  display: inline-block;
+  font-size: 10px;
+}
+
+.codeText {
+  opacity: 0.5;
+}
+
+.codeNum {
+  font-weight: 700;
+}
+
+.notAvaible, .avaible {
+  margin-left: 60px;
+}
+
+.avaible {
+  display: none;
+}
+
+.notAvaible{
+  display: block;
+}
+
+.redRound, .greenRound {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin: 1px;
+}
+.redRound {
+  background-color: red;  
+}
+.greenRound {
+  background-color: green;
+}
+.notAvaibleText, .avaibleText {
+  display: inline-block;
+  font-size: 12px;
+}
+.notAvaibleText {
+  color: red;
+}
+.avaibleText {
+  color: green;
+}
+
+.info {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 60px;
+}
+
+.memory {
+  margin-left: 60px;
+  display: none;
+}
+
+.memory > input[type=radio]:checked + label{
+  color: black;
+  border-bottom: none;
+  text-decoration: none;
+  background-color: rgba(218, 223, 225, 1);
+}
+
+.memory > input[type=radio] + label {
+  margin-right: 20px;
+  color: aquamarine;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.price {
+  margin-left: 60px;
+  border-bottom: 1px solid rgba(218, 223, 225, 1);
+}
+
+.programmCitrus {
+  display: flex;
+  color: orange;
+  font-size: 12px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  opacity: 0.5;
+  margin-top: 0;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.newPrice {
+  font-weight: 700;
+  color: orange;
+  font-size: 1.3rem;
+  display: inline-flex;
+}
+
+.newPrice > p {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-left: 2px;
+}
+
+.save {
+  margin-bottom: 10px;
+  height: 20px;
+  color: rgba(0, 230, 64, 0.5);
+}
+
+.save > p {
+  opacity: 0.8;
+  font-weight: 500;
+  color: rgba(0, 230, 64, 1);
+  display: inline-block;
+}
+
+.icons {
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.icons > div {
+  margin-left: 60px;
+  display: inline-block;
+}
+
+.icons > div > img {
+  opacity: 0.7;
+  width: 30px;
+  height: 30px;
+}
+.stock  {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.stock > img {
+  position: relative;
+  display: inline-block;
+  background-color: green;
+  top: -10px;
+  height: 60px;
+  width: 80px;
+}
+
+.stockRight {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.stockRightTop {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.stockRightBot {
+  color: orange;
+  font-weight: 600;
+}
+
+.spec {
+  margin-left: 60px;
+}
+
+.spec > ul {
+  padding: 0;
+  text-align: left;
+  font-weight: 600;
+}
+
+.spec > ul > li {
+  opacity: 0.5;
+  margin-left: 20px;
+}
